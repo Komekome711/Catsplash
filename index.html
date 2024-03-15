@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>CatSplash</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+  </head>
+
+  <body onload="firstLoad()">
+    <div id="spinner">
+      <!-- loading division -->
+    </div>
+
+    <h1>
+      <a href="#">Catsplash <i class="fa fa-paw"></i></a>
+    </h1>
+
+    <!-- <h2>Cat Splash API</h2> -->
+
+    <div class="search">
+      <input
+        class="no-default"
+        id="search-input"
+        type="text"
+        placeholder="Enter a word about cat"
+      />
+      <button type="button" class="no-default" onclick="searchClick();">
+        <i class="fa fa-search fa-2x"></i>
+      </button>
+    </div>
+
+    <div id="my-container" class="data-container">
+      <!-- container to write the list into -->
+      <!-- static example -->
+      <!-- <div class="photo-container">
+        </div> -->
+    </div>
+
+    <!-- load more button -->
+    <div id="loadMoreBtn" class="btn" onclick="loadmore()">
+      More Cat <i class="fa fa-paw"></i>
+    </div>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>
